@@ -1,4 +1,4 @@
-# Token-Creation-Project
+# Functions-and-Errors-Project
 The purpose of this code is to create contracts with the require(), assert(), and revert() statements implemented.
 ## Getting Started
 Copy the file below:
