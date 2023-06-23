@@ -96,7 +96,7 @@ Once you are done, click the "tokenSupply" button again to view your updated tok
 
 Note that no transaction or error will happen if the token you burned exceeds the one you minted.
 
-For the require() statement
+###For the require() statement:
 
 ```Java
 require(_value > 0, "Value must be greater than zero");
