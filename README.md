@@ -102,3 +102,21 @@ Note that no transaction or error will happen if the token you burned exceeds th
 require(_value > 0, "Value must be greater than zero");
 ```
 
+The user cannot mint if the user inputs a zero value in the minting value field area because minting zero tokens don’t make any sense, and it unnecessarily uses a gas fee for doing the transaction, which is a waste.
+
+### Next is the revert() statement:
+
+```Java
+revert("Value must be greater than zero"); // Revert if _value is 42
+```
+
+Here, we are checking that the value of the tokens we are burning should be greater than zero. If it is not, the condition becomes true where the user will receive a message that “Value must be greater than zero,” and it will revert all the gas consumed and undo all the changes. 
+
+### Lastly, the assert() statement:
+
+```Java
+assert(balances[_address] <= balances[_address] + _value); // Assert that the balance of address has decreased by _value or is zero
+```
+
+It is a function wherein it checks the user's balance to see if it has decreased or not after deducting the amount from the balance. If it does not decrease, then the execution stops there, and reverts all changes.
+
