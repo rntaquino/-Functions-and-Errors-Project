@@ -83,19 +83,22 @@ In the solidity compiler, ensure the checkbox for auto compile is checked, and c
 
 Next, hover your pointer over the icon below and click "Deploy and run transactions."
 
-Here, you can experiment with the number of tokens minted and burned. For starters, click the yellow button "Deploy," which should officially create the token ready to be minted and burned.
+Here, you can experiment with the number of tokens minted and burned. For starters, click the yellow "Deploy" button, which should officially create the token ready to be minted and burned.
 
 Under the deployed contracts tab, click the following buttons to view the token name and abbreviation, and of course, the total supply you currently have. 
 
-Now, if you want to experiment with the minting and burning function, scroll to the very top and see "Account" from there, you can choose what accounts you would like to transact with, but to make things easier, you can start with the default one. Copy the account details.
+Now, if you want to experiment with the minting and burning function, scroll to the very top and see "Account" From there, you can choose what accounts you would like to transact with, but to make things easier, you can start with the default one. Copy the account details.
 
 After copying the details, go to the "Deployed Contracts" tab page, and you should be able to see the buttons named "burn" and "mint." Click the arrow down beside them and text fields will be displayed as "_address."
 and "_value." In the address text field, paste the copied account details from earlier, and in the value text field, input the number of tokens you would like to mint and burn.
 
-Once you are done, click the "tokenSupply" button again to view your updated amount of tokens.
+Once you are done, click the "tokenSupply" button again to view your updated token amount.
 
-Do note that no transaction or error will happen if the token you burned exceeds the one you minted.
+Note that no transaction or error will happen if the token you burned exceeds the one you minted.
 
+For the require() statement
 
-
+```Java
+require(_value > 0, "Value must be greater than zero");
+```
 
