@@ -22,7 +22,7 @@ contract MyToken {
      * @param _value Amount of tokens to mint
      */
     function mint(address _address, uint _value) public {
-        /// Checking _value to be greater than zero or return the mentioned error message
+        // Checking _value to be greater than zero or return the mentioned error message
         require(_value > 0, "Value must be greater than zero");
 
         totalSupply += _value;
@@ -50,23 +50,7 @@ contract MyToken {
 
         assert(balances[_address] <= balances[_address] + _value); // Assert that the balance of address has decreased by _value or is zero
     }
-
-    // name function
-    function name() public view returns (string memory) {
-        return tokenName;
-    }
-
-    // symbol function
-    function symbol() public view returns (string memory) {
-        return tokenAbbrv;
-    }
-
-    // decimals function
-    function decimals() public pure returns (uint8) {
-        return 18; // Assuming 18 decimals for this example
-    }
 }
-
 
 ```
 ## Executing the Program
