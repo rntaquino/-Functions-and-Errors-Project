@@ -9,8 +9,8 @@ pragma solidity 0.8.18;
 
 contract MyToken {
     // public variables here
-    string public tokenName = "Sample";
-    string public tokenAbbrv = "SMPLE";
+    string public tokenName = "Metal Gear Solid";
+    string public tokenAbbrv = "MGS";
     uint public totalSupply = 0;
 
     /// mapping from user wallet address to token balance
